@@ -29,6 +29,7 @@
                 <input type="submit" value="Acessar" name="btn_login"><br>
           
             </form>
+            <a href="cadastro_usuario.php">Crie uma conta</a>
 
         </div>
     </div>
