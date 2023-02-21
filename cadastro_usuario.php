@@ -13,18 +13,19 @@
             if(isset($_SESSION["mensagem"])){
                   echo $_SESSION["mensagem"];
                   unset($_SESSION["mesagem"]);
+                  session_destroy();
             }
             ?>
                                      
                      <form action="validar_cadastro_usuario.php" method="post">
                             <label for="">Nome</label><br>
-                             <input type="text" name="nome"><br>
+                             <input type="text" name="nome" required><br>
                             <label for="">Login</label><br>
-                            <input type="text" name="login"><br>
+                            <input type="text" name="login" required><br>
                             <label for="">Senha</label><br>
-                            <input type="password" name="senha" id=""><br>
+                            <input type="password" name="senha" id="" required><br>
                             <label for="">Confirmar senha</label><br>
-                            <input type="password" name="senha2" id=""><br>
+                            <input type="password" name="senha2" id="" required><br>
                             <input type="submit" value="Cadastrar" name="btn_cadastro">
 
 

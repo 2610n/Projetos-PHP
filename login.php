@@ -17,15 +17,16 @@
                if(isset($_SESSION["mensagem"])){
                   echo $_SESSION["mensagem"];
                   unset($_SESSION["mensagem"]);
+                  session_destroy();
                }
             ?>
 
             <form action="processa_login.php" method="post" enctype="multipart/form-data">
 
                 <label for="">Login</label><br>
-                <input type="text" name="login"><br>
+                <input type="text" name="login" required><br>
                 <label for="">Senha</label><br>
-                <input type="password" name="senha"><br>
+                <input type="password" name="senha" required><br>
                 <input type="submit" value="Acessar" name="btn_login"><br>
           
             </form>
