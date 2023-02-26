@@ -20,7 +20,7 @@
 border: 3px solid  rgb(19, 86, 172);
 padding: 60px 50px;
 border-radius:30px;
-background-color: rgb(29, 31, 41);
+background-color: rgb(17, 18, 24);
 font-family:Verdana, Geneva, Tahoma, sans-serif ;
 color: white;
 }
@@ -33,18 +33,21 @@ color: white;
 #btn{
     background-color: rgb(11, 58, 113);
     border: none;
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
+    margin-bottom: 20px;
 }
 
  #form a{
     text-decoration: none;
     color: blue;
+    font-weight: bolder;
 
  }
  #btn:hover{
     background-color: rgb(56, 109, 182);
     cursor: pointer;
+   
  }
  #form a:hover{
     text-decoration: none;
@@ -55,5 +58,13 @@ color: white;
     display: flex;
      justify-content: center;
      margin-bottom: 50px;
+ }
+ 
+ #titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+
  }
 
